@@ -12,7 +12,7 @@ Refer to the [official Docker documentation](https://docs.docker.com/). For Wind
 
 ![windows boot2docker start](windows-boot2docker-start.png)
 
-    The Boot2Docker Start script will connect you to a shell session in the virtual machine. If needed, it will initialize a new Virtual Machine (VM) and start it.
+The Boot2Docker Start script will connect you to a shell session in the virtual machine. If needed, it will initialize a new Virtual Machine (VM) and start it.
 
 ### Running Docker
 
