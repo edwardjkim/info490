@@ -24,5 +24,5 @@ X](https://docs.docker.com/installation/mac/).
 
 If you are running Linux on your computer, you probably already know how to
 install packages, but if you are not sure, look for you distribution in the
-[installtion section](https://docs.docker.com/installation/#installation) of
+[installation section](https://docs.docker.com/installation/#installation) of
 Docker docs.
