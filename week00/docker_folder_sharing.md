@@ -50,10 +50,10 @@ You can make sure that the data container is mounted correctly by typing the fol
 
 ```console
 root@58c532684e57:/# cd /data
-root@58c532684e57:/# touch hello.test
+root@58c532684e57:/# touch hello
 ```
 
-and a file named "hello.test" should appear in the "data" folder of your Explorer window.
+and a file named "hello" should appear in the "data" folder of your Explorer window.
 
 And to IPython notebook server with the data container, type
 
