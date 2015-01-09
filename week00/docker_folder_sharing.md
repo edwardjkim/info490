@@ -1,9 +1,7 @@
 ## Folder Sharing
 
 If you are using Boot2Docker on Windows or Mac OS X, you will need to set up
-folder sharing to share disk space between your local desktop and a Docker
-container is by creating a volume container and then sharing that to where it's
-needed. You may postpone this until the end of the first week when you will be
+folder sharing to share disk space between your local desktop and a Docker container. You may postpone this until the end of the first week when you will be
 more familiar with the Unix CLI, but keep in mind that you will need to use
 this feature at some point.
 
