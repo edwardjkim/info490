@@ -49,17 +49,37 @@ $ docker run -it --volumes-from my-data info490/base /bin/bash
 You can make sure that the data container is mounted correctly by typing the following in your container:
 
 ```console
-root@58c532684e57:/# cd /data
-root@58c532684e57:/# touch hello
+root@58c532684e57:/notebooks# cd /data
+root@58c532684e57:/data# touch hello
 ```
 
 and a file named "hello" should appear in the "data" folder of your Explorer window.
 
-And to IPython notebook server with the data container, type
+And to run the IPython notebook server with our data container, type
 
 ```console
 $ docker run -d -p 8888:8888 -e "PASSWORD=YourPassword" --volumes-from my-data info490/base
 ```
+
+Note: If you are still running a notebook server from the previous section, you will see an error, and you will need to stop the previous notebook server. List docker containers by typing:
+
+```console
+$ sudo docker ps -a
+CONTAINER ID        IMAGE                    COMMAND             CREATED             STATUS              PORTS                    NAMES
+c693f2078b1e        info490/base:latest   "/notebook.sh"      19 seconds ago      Up 18 seconds       0.0.0.0:8888->8888/tcp   agitated_carson
+```
+
+The notebook server's COMMAND is "/notebooks.sh" and its PORTS shows
+"8888->8888". Stop and delete this container by using its name:
+
+```console
+$ docker stop agitated_carson
+$ docker rm agitated_carson
+```
+
+Now you can start a new IPython notebook server with the data container.
+
+Note:
 
 You will find the "data" volume mounted as "/data" in that container. Note that "my-data" is the name of volume container, this is shared via the "network" by the "samba" container that refers to it by name. So, in this example, if you were on OS-X you now have /Volumes/data and /data in container being shared. You can change the paths as needed.
 
