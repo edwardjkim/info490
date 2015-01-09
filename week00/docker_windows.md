@@ -1,8 +1,9 @@
-## Docker on Windows
+## How to Install Docker
 
-### Installation
+To run Docker on Windows or Mac OS X, you need to install an application called
+[Boot2Docker](http://boot2docker.io/). The [official Docker documentation](https://docs.docker.com/) provides clear [installation guides](https://docs.docker.com/installation/#installation) for a variety of platforms. After installing Boot2Docker, you should proceed to the [next section](docker_running_ipynb.md) on how to use INFO 490 Docker container to launch an IPython notebook server.
 
-Refer to the [official Docker documentation](https://docs.docker.com/). For Windows, see [Docker for Windows installation guide](https://docs.docker.com/installation/windows/).
+### Windows
 
 1. Download the latest release of the [Docker for Windows Installer](https://github.com/boot2docker/windows-installer/releases/latest).
 
@@ -14,63 +15,14 @@ Refer to the [official Docker documentation](https://docs.docker.com/). For Wind
 
 The Boot2Docker Start script will connect you to a shell session in the virtual machine. If needed, it will initialize a new Virtual Machine (VM) and start it.
 
-### Running Docker
+### Mac OS X
 
-Boot2Docker will log you in automatically so you can start using Docker right
-away.
+Please see [Installing Docker on MAC OS
+X](https://docs.docker.com/installation/mac/).
 
-You should go though the [10-minute Docker tutorial](https://www.docker.com/tryit/). It would also be a good idea to go through the [Docker User Guide](https://docs.docker.com/userguide/).
+### Linux
 
-We will use the Docker container image `ipython/scipyserver` from the [IPython
-Docker Hub repository](https://registry.hub.docker.com/u/ipython/scipyserver/). Run 
-
-```console
-$ docker pull ipython/scipyserver
-```
-
-This will download the container image. Let's make sure that it works:
-
-```console
-$ docker run ipython/scipyserver /bin/echo "hello world"
-hello world
-```
-
-We can also launch the container image in an interactive mode:
-
-```console
-$ docker run -it ipython/scipyserver /bin/bash
-root@0b2616b0e5a8:/# echo "hello world"
-hello world
-```
-
-We will also be using IPython notebooks extensively in this course, so let's
-make sure that the notebook server is working properly:
-
-```console
-$ docker run -d -p 443:8888 -e "PASSWORD=info490" ipython/scipyserver
-```
-
-Now open up a web browser of your choice and go to https://192.168.59.103
-(if you see a security warning, ignore it and continue to the address). After you enter the password info490, you will be able to access the notebook server.
-
-![notebook server](ipynb1.png)
-
-Select New > Python 3. An empty notebook will be created. You can test this by
-entering 
-
-```python
-print('hello world')
-```
-
-and pressing <kbd>shift</kbd>+<kbd>Enter<kbd>:
-
-![empty notebook](ipynb2.png)
-
-When you are done working on your IPython notebook, save your work by selecting
-File > Download as > IPython Notebook (.ipynb):
-
-![download notebook](ipynb3.png)
-
-Your work will be saved on the *host* machine (not in the Docker container
-image). To save your work in the container or move files between the image and
-the host, see [Folder Sharing](docker_folder_sharing.md).
+If you are running Linux on your computer, you probably already know how to
+install packages, but if you are not sure, look for you distribution in the
+[installtion section](https://docs.docker.com/installation/#installation) of
+Docker docs.
