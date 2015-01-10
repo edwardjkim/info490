@@ -15,17 +15,17 @@ docker@boot2docker:~$
 First, download our INFO 490 Docker image by typing
 
 ```console
-$ docker pull info490/base
+$ docker pull lcdm/info490
 ```
 
 It is common for the prompt on Unix systems to end in a $ character. Thus, it
 is common to indicate that the given example is a Unix command by writing the $
-symbol at the beginning. So when I told you to type `$ docker pull info490/base`, I was actually telling you that this is a Unix command and you have to type `docker pull info490/base` (without `$`) at the prompt.
+symbol at the beginning. So when I told you to type `$ docker pull lcdm/info490`, I was actually telling you that this is a Unix command and you have to type `docker pull lcdm/info490` (without `$`) at the prompt.
 
 After the download process completes (with no error; if you get an error anywhere during this assignment, ask for help or google it), let's make sure that it works:
 
 ```console
-$ docker run info490/base /bin/echo "hello world"
+$ docker run lcdm/info490 /bin/echo "hello world"
 hello world
 ```
 
@@ -34,7 +34,7 @@ hello world
 For the first couple of weeks, you will need to enter an **interactive mode** by specifying `-it` option:
 
 ```console
-$ docker run -it info490/base /bin/bash
+$ docker run -it lcdm/info490 /bin/bash
 root@0b2616b0e5a8:/# echo "hello world"
 hello world
 ```
@@ -46,7 +46,7 @@ You can tell that you are in a different server as a different user because `use
 We will also be using **IPython** notebooks for most part of the course, so let's make sure that the notebook server is working properly. Type (change "YourPassword" to something you would remember)
 
 ```console
-$ docker run -d -p 8888:8888 -e "PASSWORD=YourPassword" info490/base
+$ docker run -d -p 8888:8888 -e "PASSWORD=YourPassword" lcdm/info490
 ```
 
 Now open up a web browser of your choice on your **host** machine and go to http://192.168.59.103. After you enter your password, you will be able to access the notebook server.

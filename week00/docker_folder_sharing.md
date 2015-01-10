@@ -43,7 +43,7 @@ You can then use your data container from any container you like. For
 interactive mode, you would type
 
 ```console
-$ docker run -it --volumes-from my-data info490/base /bin/bash
+$ docker run -it --volumes-from my-data lcdm/info490 /bin/bash
 ```
 
 You can make sure that the data container is mounted correctly by typing the following in your container:
@@ -58,7 +58,7 @@ and a file named "hello" should appear in the "data" folder of your Explorer win
 And to run the IPython notebook server with our data container, type
 
 ```console
-$ docker run -d -p 8888:8888 -e "PASSWORD=YourPassword" --volumes-from my-data info490/base
+$ docker run -d -p 8888:8888 -e "PASSWORD=YourPassword" --volumes-from my-data lcdm/info490
 ```
 
 Note: If you are still running a notebook server from the previous section, you will see an error, and you will need to stop the previous notebook server. List docker containers by typing:
@@ -66,7 +66,7 @@ Note: If you are still running a notebook server from the previous section, you 
 ```console
 $ sudo docker ps -a
 CONTAINER ID        IMAGE                    COMMAND             CREATED             STATUS              PORTS                    NAMES
-c693f2078b1e        info490/base:latest   "/notebook.sh"      19 seconds ago      Up 18 seconds       0.0.0.0:8888->8888/tcp   agitated_carson
+c693f2078b1e        lcdm/info490:latest   "/notebook.sh"      19 seconds ago      Up 18 seconds       0.0.0.0:8888->8888/tcp   agitated_carson
 ```
 
 The notebook server's COMMAND is "/notebooks.sh" and its PORTS shows
