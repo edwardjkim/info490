@@ -49,7 +49,7 @@ We will also be using **IPython** notebooks for most part of the course, so let'
 $ docker run -d -p 8888:8888 -e "PASSWORD=YourPassword" lcdm/info490
 ```
 
-Now open up a web browser of your choice on your **host** machine and go to http://192.168.59.103. After you enter your password, you will be able to access the notebook server.
+Now open up a web browser of your choice on your **host** machine and go to http://192.168.59.103:8888. After you enter your password, you will be able to access the notebook server.
 
 ![notebook server](ipynb1.png)
 
