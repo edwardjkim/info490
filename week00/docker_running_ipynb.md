@@ -53,7 +53,7 @@ Now open up a web browser of your choice on your **host** machine and go to http
 
 ![notebook server](ipynb1.png)
 
-Select New > Python 3, and an empty notebook will be created. You can test this by entering 
+Select New Notebook and an empty notebook will be created. You can test this by entering 
 
 ```python
 print('hello world')
