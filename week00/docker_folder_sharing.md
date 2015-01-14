@@ -9,11 +9,6 @@ First, make a volume container by typing (you only need to do this once)
 
 ```console
 $ docker run -v /data --name my-data busybox true
-```
-
-On Windows, type
-
-```console
 $ docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba my-data
 ```
 
