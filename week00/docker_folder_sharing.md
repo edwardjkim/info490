@@ -14,8 +14,7 @@ $ docker run -v /data --name my-data busybox true
 On Windows, type
 
 ```console
-$ docker run --rm -v /usr/local/bin/docker:/docker -v
-/var/run/docker.sock:/docker.sock svendowideit/samba my-data
+$ docker run --rm -v /usr/local/bin/docker:/docker -v /var/run/docker.sock:/docker.sock svendowideit/samba my-data
 ```
 
 We will connect to the Docker container using the IP address of your
