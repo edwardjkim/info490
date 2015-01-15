@@ -51,6 +51,14 @@ $ docker run -d -p 8888:8888 -e "PASSWORD=YourPassword" lcdm/info490
 
 Now open up a web browser of your choice on your **host** machine and go to http://192.168.59.103:8888. After you enter your password, you will be able to access the notebook server.
 
+Note: Boot2Docker usually uses the address 192.168.59.103, but it is possible
+that it uses a different address. If you cannot connect to the default address,
+check the ip address with
+
+```console
+docker@boot2docker:~$ ifconfig
+```
+
 ![notebook server](ipynb1.png)
 
 Select New Notebook and an empty notebook will be created. You can test this by entering 
