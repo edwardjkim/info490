@@ -1,9 +1,8 @@
 ## Folder Sharing
 
-If you are using Boot2Docker on Windows or Mac OS X, you will need to set up
-folder sharing to share disk space between your local desktop and a Docker container. You may postpone this until the end of the first week when you will be
-more familiar with the Unix CLI, but keep in mind that you will need to use
-this feature at some point.
+### Windows and Mac OS X
+
+If you are using Boot2Docker on Windows or Mac OS X, you will need to set up folder sharing to share disk space between your local desktop and a Docker container. You may postpone this until the end of the first week when you will be more familiar with the Unix CLI, but keep in mind that you will need to use this feature at some point.
 
 First, make a volume container by typing (you only need to do this once)
 
@@ -77,6 +76,11 @@ Note:
 
 You will find the "data" volume mounted as "/data" in that container. Note that "my-data" is the name of volume container, this is shared via the "network" by the "samba" container that refers to it by name. So, in this example, if you were on OS-X you now have /Volumes/data and /data in container being shared. You can change the paths as needed.
 
+### Linux
+
+If you run Linux natively, see [Managing Data in Containers](https://docs.docker.com/userguide/dockervolumes/).
+
 ### Reference
 
 - [Boot2Docker documentation](https://github.com/boot2docker/boot2docker).
+- [Managing Data in Containers](https://docs.docker.com/userguide/dockervolumes/)
