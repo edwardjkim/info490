@@ -15,7 +15,9 @@ We will connect to the Docker container using the IP address of your
 Boot2Docker host, which is 192.168.59.103 by default. On Windows, use Explorer
 to connect to
 
-    \\192.168.59.103\data (or _data)
+    \\192.168.59.103
+
+and the shared folder should appear as either `data` or `_data`.
 
 ![connect with explorer](explorer2.png)
 
