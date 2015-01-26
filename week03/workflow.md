@@ -50,6 +50,7 @@ Create a new notebook by clicking on `New Notebook`. In the notebook cell, type
 cp /data/spring2015/week03/hello.ipynb /notebooks/.
 ```
 
-and press <kbd>shift</kbd> + <kbd>enter</kbd>. Now a notebook named `hello`
-should appear in the lsit of notebooks in your *IPython Dashboard*.
+and press <kbd>shift</kbd> + <kbd>enter</kbd>. With the `%%script` line (where
+`script` in this case is `bash`), the rest of the cell will be run by that
+script. Now a notebook named `hello` should appear in the lsit of notebooks in your *IPython Dashboard*.
 
