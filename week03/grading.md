@@ -29,6 +29,6 @@ important that you do the following:
 
 5. Try to reproduce the sample output as closely as possible.
 
- Pay close attention to the spelling, whitespaces, significant digits, etc.
+ Pay close attention to the spelling, whitespaces, data types, significant digits, etc.
 
 Is automated grading perfect? Of course not. That's where the peer grading comes in. Grading by your peers will hopefully balance out the shortcomings of automated grading. If you think you were graded unfairly due to a bug in the automated grading program, please contact Edward at jkim575@illinois.edu.
