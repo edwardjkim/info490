@@ -9,7 +9,7 @@ and you **must** use these templates on your notebook server. In the following,
 I will describe how to use Git to download the templates and use them on your
 IPython notebook server.
 
-However, do note that I run Linux exclusively for everyday use, and my suggestion descrbed in the following may not be the optimal one. If you can think of a better way to use the IPython templates on the course repository, you may do it your way as long as you use the provided templates. But also note that you **must** use the course Docker image; installing and running IPython on Windows or OS X is **not** acceptable and may result in a zero for the assignment.
+However, do note that I run Linux exclusively for everyday use, and my suggestion described in the following may not be the optimal one. If you can think of a better way to use the IPython templates on the course repository, you may do it your way as long as you use the provided templates. But also note that you **must** use the course Docker image; installing and running IPython on Windows or OS X is **not** acceptable and may result in a zero for the assignment.
 
 In the following, I will assume that you have [Folder Sharing](https://github.com/INFO490/spring2015/blob/master/week00/docker_folder_sharing.md) enabled and use [Problem 3.1](p1.md) as an example.
 
@@ -25,10 +25,11 @@ removed when you exit the container. This will give you a command prompt in cont
 
 ```console
 root@containerID:/notebooks# cd /data
-root@containerID:/notebooks# git clone https://github.com/INFO490/spring2015
-root@containerID:/notebooks# ls
+root@containerID:/data# git clone https://github.com/INFO490/spring2015
+root@containerID:/data# ls
 spring2015
-root@containerID:/notebooks# exit
+root@containerID:/data# exit
+```
 
 Now your data volume has a copy of the course repository. Note that you run `git clone` only once. Once you have cloned a repository, to update your local copy of the repository, go to the corresponding directory and run
 
@@ -54,5 +55,3 @@ cp /data/spring2015/week03/hello.ipynb /notebooks/.
 and press <kbd>shift</kbd> + <kbd>enter</kbd>. Now a notebook named `hello`
 should appear in the lsit of notebooks in your *IPython Dashboard*.
 
-Alternatively, you can download the template from the GitHub webpage, save it
-on your host computer, and open this file from your notebook server.
