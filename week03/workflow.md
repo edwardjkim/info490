@@ -5,7 +5,7 @@ Git, I will outline here how I would go about doing the assignments if I were ru
 
 https://github.com/INFO490/spring2015
 
-and you **must** use these templates on your notebook server. In the following,
+and you **must** use these templates in your notebook server. In the following,
 I will describe how to use Git to download the templates and use them on your
 IPython notebook server.
 
@@ -54,3 +54,8 @@ and press <kbd>shift</kbd> + <kbd>enter</kbd>. With the `%%script` line (where
 `script` in this case is `bash`), the rest of the cell will be run by that
 script. Now a notebook named `hello` should appear in the lsit of notebooks in your *IPython Dashboard*.
 
+When you are done writing your code, go to *FIle* > *Download as*, and download
+your code **both** as `.ipynb` and `.py`. The IPython notebooks format will be
+used for peer grading, and the regualr Python format will be used for
+instructor grading and for importing your existing codes as modules (more on
+this later). You should upload both formats onto Moodle.
