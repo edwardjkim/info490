@@ -38,6 +38,9 @@ root@containerID:/notebooks# cd /data/spring2015
 root@containerID:/data/spring2015# git pull
 ```
 
+You should run `git pull` before beginning every assignment to make sure that
+you have the latest copy of the course repository.
+
 Now make sure that an IPython notebook server is running (see [Running Docker](https://github.com/INFO490/spring2015/blob/master/week00/docker_running_ipynb.md)) with your data volume mounted, and open up your web browser and go to http://192.168.59.103:8888 (the address of your notebook server may be different). Note that the notebook server only shows the notebooks in `/notebooks` folder, so you will have to move the template from `/data` to `/notebooks`. There are various ways to do this (lauching a container and simply doing `cp /data/spring2015/week03/hello.ipynb /notebooks/.` is not one of them because containers are isolated). I'll show you one way to do this by demonstrating the use of [cell magics in IPython](http://nbviewer.ipython.org/github/FRidh/ipython/blob/1.x/examples/notebooks/Cell%20Magics.ipynb) at the same time.
 
 Create a new notebook by clicking on `New Notebook`. In the notebook cell, type
