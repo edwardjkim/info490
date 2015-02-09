@@ -36,15 +36,16 @@ RUN apt-get install -y -q \
     python3-matplotlib \
     python3-pandas \
     python3-bs4 \
-    ipython3 \
-    ipython3-notebook
+    wget
 
 # scikit-learn cannot be installed with apt-get
 RUN pip3 install scikit-learn
 # install seaborn
 RUN pip3 install seaborn
 
-RUN apt-get install -y -q wget
+# pip install has more recent version of ipython
+# install ipython notebook and dependencies
+RUN pip3 install ipython pyzmq jinja2 pygments bokeh
 
 # Extremely basic test of install
 RUN python3 -c "import requests, bs4, sqlite3, \
