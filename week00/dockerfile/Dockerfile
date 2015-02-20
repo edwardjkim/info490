@@ -46,6 +46,8 @@ RUN pip3 install seaborn
 # pip install has more recent version of ipython
 # install ipython notebook and dependencies
 RUN pip3 install ipython pyzmq jinja2 pygments bokeh
+RUN pip3 install statsmodels
+RUN apt-get install -y -q ttf-liberation
 
 # Extremely basic test of install
 RUN python3 -c "import requests, bs4, sqlite3, \
