@@ -7,7 +7,14 @@ Using the `-v` option seems to easier than creating a data container.
 The Boot2Docker automatically mounts the `C:\Users` directory of
   your **Windows** machine onto the Boot2Docker VM. 
 
-If you are using Windows, at the Boot2Docker prompt, do
+When you start Boot2Docker, you are in `/home/docker` folder.
+
+```console
+docker@boot2docker:~$ pwd
+/home/docker
+```
+
+The shared folder is located at `/c/Users`. At the Boot2Docker prompt,
 
 ```console
 $ ls /c/Users
@@ -20,7 +27,7 @@ You should see your users directories (your username) of the *Windows* machine.
 $ mkdir /c/Users/<username>/info490
 ```
 
-Obviously, you should replace `<username>` in the above command with your username.
+Obviously, you should replace `<username>` with your username.
 
 Back up important files in the currently running notebook server container. 
   Stop and remove the container using `docker stop` and `docker rm`.
@@ -31,7 +38,7 @@ Back up important files in the currently running notebook server container.
 $ docker run -d -p 8888:8888 -e "PASSWORD=YourPassword" -v /c/Users/<username>/info490:/notebooks/data lcdm/info490
 ```
 
-Now you should be able to share files between the `c:\Users\Default\info490`
+Now you should be able to share files between the `c:\Users\<username>\info490`
   in Windows with the `/notebooks/data` directory
   in your notebook server container.
   Open a web browser in Windows, access the notebook server,
@@ -61,8 +68,6 @@ Create a sub-directory:
 ```console
 $ mkdir info490
 ```
-
-Obviously you should replace `<username>` in the above command with your username.
 
 Back up important files in the currently running notebook server container.
   Stop and remove the container using `docker stop` and `docker rm`.
