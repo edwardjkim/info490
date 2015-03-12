@@ -6303,33 +6303,33 @@
    </path>
    <path d="M 154.32743,294.71587 L 154.32743,330.08203 L 177.47618,351.01798 M 0.64999998,250.99045 L 111.24502,250.99045 L 154.32743,294.71587 L 209.62724,294.71587 L 243.70736,329.43901 L 243.70736,351.01798" id="separator" style="fill:none;stroke:#a9a9a9;stroke-width:1.29999995">
    </path>
-   <circle cx="367.68198" cy="118.095" fill="#4575b4" id="Chicago" r="22.7545333333" stroke="black" stroke-width="1">
+   <circle cx="367.68198" cy="118.095" fill="#e0f3f8" id="Chicago" r="22.7545333333" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="282.37198" cy="240.151" fill="#e0f3f8" id="Dallas-Ft Worth" r="20.8120333333" stroke="black" stroke-width="1">
+   <circle cx="282.37198" cy="240.151" fill="#fee090" id="Dallas-Ft Worth" r="20.8120333333" stroke="black" stroke-width="1">
    </circle>
    <circle cx="417.75098" cy="216.963" fill="#fee090" id="Atlanta" r="16.7721" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="56.34198" cy="200.601" fill="#fee090" id="Los Angeles" r="15.0006333333" stroke="black" stroke-width="1">
+   <circle cx="56.34198" cy="200.601" fill="#fc8d59" id="Los Angeles" r="15.0006333333" stroke="black" stroke-width="1">
    </circle>
    <circle cx="120.15598" cy="215.306" fill="#d73027" id="Phoenix" r="12.2877" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="346.42998" cy="163.71" fill="#91bfdb" id="St Louis" r="10.8159" stroke="black" stroke-width="1">
+   <circle cx="346.42998" cy="163.71" fill="#fee090" id="St Louis" r="10.8159" stroke="black" stroke-width="1">
    </circle>
    <circle cx="415.57898" cy="109.032" fill="#4575b4" id="Detroit" r="9.9174" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="316.12998" cy="80.84" fill="#91bfdb" id="Minneapolis" r="9.4985" stroke="black" stroke-width="1">
+   <circle cx="316.12998" cy="80.84" fill="#e0f3f8" id="Minneapolis" r="9.4985" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="91.11798" cy="148.89" fill="#fee090" id="Las Vegas" r="9.07643333333" stroke="black" stroke-width="1">
+   <circle cx="91.11798" cy="148.89" fill="#fc8d59" id="Las Vegas" r="9.07643333333" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="527.57098" cy="86.433" fill="#91bfdb" id="Boston" r="8.86773333333" stroke="black" stroke-width="1">
+   <circle cx="527.57098" cy="86.433" fill="#4575b4" id="Boston" r="8.86773333333" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="204.50698" cy="147.585" fill="#91bfdb" id="Denver" r="8.83946666667" stroke="black" stroke-width="1">
+   <circle cx="204.50698" cy="147.585" fill="#e0f3f8" id="Denver" r="8.83946666667" stroke="black" stroke-width="1">
    </circle>
    <circle cx="295.68998" cy="277.583" fill="#e0f3f8" id="Houston" r="8.5731" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="449.87798" cy="195.347" fill="#e0f3f8" id="Charlotte" r="8.5542" stroke="black" stroke-width="1">
+   <circle cx="449.87798" cy="195.347" fill="#fee090" id="Charlotte" r="8.5542" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="29.59598" cy="142.028" fill="#e0f3f8" id="San Francisco" r="8.11576666667" stroke="black" stroke-width="1">
+   <circle cx="29.59598" cy="142.028" fill="#fee090" id="San Francisco" r="8.11576666667" stroke="black" stroke-width="1">
    </circle>
    <circle cx="502.26798" cy="113.484" fill="#91bfdb" id="Newark" r="8.03386666667" stroke="black" stroke-width="1">
    </circle>
@@ -6337,11 +6337,11 @@
    </circle>
    <circle cx="506.23098" cy="113.899" fill="#91bfdb" id="New York" r="7.76546666667" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="451.28398" cy="126.844" fill="#4575b4" id="Pittsburgh" r="7.09126666667" stroke="black" stroke-width="1">
+   <circle cx="451.28398" cy="126.844" fill="#91bfdb" id="Pittsburgh" r="7.09126666667" stroke="black" stroke-width="1">
    </circle>
    <circle cx="76.06898" cy="19.661" fill="#e0f3f8" id="Seattle" r="6.84953333333" stroke="black" stroke-width="1">
    </circle>
-   <circle cx="485.33498" cy="139.555" fill="#91bfdb" id="Baltimore" r="6.6558" stroke="black" stroke-width="1">
+   <circle cx="485.33498" cy="139.555" fill="#e0f3f8" id="Baltimore" r="6.6558" stroke="black" stroke-width="1">
    </circle>
   </svg>
  </body>
