@@ -1,0 +1,12 @@
+0|airportID|INT|0||0
+1|name|TEXT|0||0
+2|city|TEXT|0||0
+3|country|TEXT|0||0
+4|iata|TEXT|0||0
+5|icao|TEXT|0||0
+6|latitude|REAL|0||0
+7|longitude|REAL|0||0
+8|altitude|INT|0||0
+9|timeZone|INT|0||0
+10|dst|TEXT|0||0
+11|tzDatabaseTimeZone|TEXT|0||0
