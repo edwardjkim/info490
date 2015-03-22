@@ -1,3 +1,3 @@
 ## Week 10 Assignment
 
-- [Problem 1](p1.md): SQLite.
+- [Problem 1-3](p1-3.md): SQLite.
