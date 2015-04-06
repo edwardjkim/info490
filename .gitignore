@@ -1,0 +1,12 @@
+# Python extra files #
+######################
+.pyc
+.ipynb_checkpoints
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
