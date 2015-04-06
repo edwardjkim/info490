@@ -1,7 +1,10 @@
-## Problem 11.2. To and From Chicago.
 
-- The IPython notebook template for this problem is
-  [to_from_ord.ipynb](http://nbviewer.ipython.org/github/EdwardJKim/info490/blob/master/week11/benchmark.ipynb).
+
+    import sqlite3 as sl
+    import pandas as pd
+    import numpy as np
+
+## Problem 11.2. To and From Chicago.
 
 In this problem, we will use the databse we have created in week 10
   and use SQLite and Pandas to extract some summary information
@@ -17,6 +20,9 @@ The database we have created in week 10 has a table named `flights`,
 .sql)
   to import `2001.csv`.
 
+
+    # edit this path to point to your database
+    db_path = "/data/week11.db"
 
 ### Function: get\_from\_ord()
 
@@ -113,6 +119,27 @@ you should get
 ```
 
 
+    def get_from_ord(database):
+        '''
+        Takes a string and returns a pandas dataframe.
+        
+        Parameters
+        ----------
+        database: A str. The path and/or the file name to the SQL database.
+        
+        Returns
+        -------
+        A pandas dataframe.
+        '''
+        
+        #### your code goes here
+        
+        return from_ord
+
+
+    from_ord = get_from_ord(db_path)
+    print(from_ord)
+
 ### Function: get\_to\_ord()
 
 The `get_to_ord()` function is similar to the `get_from_ord()` function
@@ -193,6 +220,27 @@ print(to_ord)
 ```
 
 
+    def get_to_ord(database):
+        '''
+        Takes a string and returns a pandas dataframe.
+        
+        Parameters
+        ----------
+        database: A str. The path and/or the file name to the SQL database.
+        
+        Returns
+        -------
+        A pandas dataframe.
+        '''
+       
+        #### your code goes here
+    
+        return to_ord
+
+
+    to_ord = get_to_ord(db_path)
+    print(to_ord)
+
 ### Function: pd\_to\_sql()
 
 The `pd_to_sql()` function takes a Pandas DataFrame (`to_ord` or `from_ord`),
@@ -202,6 +250,22 @@ The `pd_to_sql()` function takes a Pandas DataFrame (`to_ord` or `from_ord`),
   a table that matches `df`, the DataFrame that is passed as the first
   argument to the function.
 
+
+    def pd_to_sql(df, database, table):
+        '''
+        Converts a dataframe to a table in an SQL database.
+        
+        Parameters
+        ----------
+        df: A pandas.DataFrame, e.g. to_ord or from_ord.
+        database: A str. The path and/or the file name to the SQL database
+                  where the table is to be created.
+        table: A str. The name of SQL table where df will be stored.
+        '''
+    
+        #### your code goes here
+        
+        return None
 
 When you run the following code cells,
 
@@ -228,6 +292,13 @@ ABE|17.0773130544994
 COS|16.7618343195266
 ```
 
+
+    pd_to_sql(from_ord[:10], db_path, 'topFromORD')
+
+
+    %%bash
+    sqlite3 /data/sql/test "SELECT * FROM topFromORD"
+
 We use the same funtion, `pd_to_sql()`, to create a table for `to_ord`.
 
 ```python
@@ -250,6 +321,13 @@ SLC|11.5625915080527
 ICT|11.3510941960038
 ```
 
+
+    pd_to_sql(to_ord[:10], db_path, "topToORD")
+
+
+    %%bash
+    sqlite3 /data/sql/test "SELECT * FROM topToORD"
+
 ### Function: join\_the\_worst()
 
 Now we do a simple JOIN in our database to return
@@ -266,6 +344,26 @@ Now we do a simple JOIN in our database to return
   And two tables should of course be joined on
   the IATA codes (`destinationCode` and `originCode`).
 
+
+    def join_the_worst(database, table1, table2):
+        '''
+        Joins two tables, table1 and table2, in database on IATA codes.
+        Returns the result in a Pandas DataFrame.
+        
+        Parameters
+        ----------
+        database: A str. The path and/or the file name of the SQL database.
+        table1: A str. The name of the first table to be joined.
+        table2: A str. The name of the second table to be joined.
+        
+        Returns
+        -------
+        A pandas Dataframe.
+        '''
+    
+        #### your code goes here
+        
+        return df
 
 When I run,
 
@@ -286,3 +384,9 @@ JFK                      20.711111        23.977778
 [3 rows x 2 columns]
 ```
 
+
+    the_worst = join_the_worst(db_path, 'topFromORD', 'topToORD')
+    print(the_worst)
+
+
+    
