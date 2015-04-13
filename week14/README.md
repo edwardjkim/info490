@@ -67,6 +67,3 @@ This will define `$HADOOP_PREFIX` and set up the Hadoop environment for proper e
 ![SequenceIQ Hadoop Docker container](images/hadoop-docker.png)
 
 -----
-### Return to the [Week 8 Index](index.ipynb).
-
------
