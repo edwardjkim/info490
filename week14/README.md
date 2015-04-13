@@ -1,4 +1,4 @@
-# Week 8: Data Intensive Computing
+# Week 14: Cloud Computing
 ## Professor Robert J. Brunner 
 ## Getting Started
 
