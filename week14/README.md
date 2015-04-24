@@ -67,3 +67,9 @@ This will define `$HADOOP_PREFIX` and set up the Hadoop environment for proper e
 ![SequenceIQ Hadoop Docker container](images/hadoop-docker.png)
 
 -----
+
+## Assignment
+
+- [Problem 1](p1.md): Google Compute Engine.
+- [Problem 2](p2.md): MapReduce.
+- [Problem 3](p3.md): Hadoop.
